@@ -1,6 +1,7 @@
 import React from "react";
 import heroPic from "../static/ryan-2024.png";
 import { Avatar, Box } from "@mui/material";
+import { theme } from "../constants/theme";
 
 export function CircleFrame() {
   return (
@@ -9,10 +10,11 @@ export function CircleFrame() {
         alt="Ryan Cross, hello friend!"
         src={heroPic}
         sx={{
-          width: 400,
-          height: 400,
+          width: 300,
+          height: 300,
           margin: "auto",
-          border: "5px solid lightgray",
+          border: "4px solid",
+          borderColor: theme.palette.primary.main,
         }}
       />
     </Box>

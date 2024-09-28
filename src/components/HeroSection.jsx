@@ -9,7 +9,9 @@ export function HeroSection() {
     <div>
       <Box component="section">
         <CircleFrame></CircleFrame>
-        <Typography variant="h3">Ryan Cross</Typography>
+        <Typography color="textPrimary" variant="h3">
+          Ryan Cross
+        </Typography>
         <SocialsBar></SocialsBar>
         <Fab variant="extended" color="primary">
           <Box sx={{ mr: 1 }}>
