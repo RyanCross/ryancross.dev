@@ -10,7 +10,7 @@ import { FaSquareUpwork } from "react-icons/fa6";
 import { iconSize } from "../constants/displayConstants.js";
 import { Box } from "@mui/material";
 
-export function Socials() {
+export function SocialsBar() {
   return (
     // box equals div by default
     <Box component="nav">
@@ -19,7 +19,6 @@ export function Socials() {
       <FaGithub size={iconSize} />
       <FaInstagram size={iconSize} />
       <FaSquareUpwork size={iconSize} />
-      <FaDiscord size={iconSize} />
     </Box>
   );
 }

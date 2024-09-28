@@ -1,6 +1,6 @@
 import React from "react";
 import { CircleFrame } from "./CircleFrame";
-import { Socials } from "./Socials";
+import { SocialsBar } from "./SocialsBar";
 import { Box, Fab, Typography } from "@mui/material";
 import { FaDownload } from "react-icons/fa6";
 
@@ -10,7 +10,7 @@ export function HeroSection() {
       <Box component="section">
         <CircleFrame></CircleFrame>
         <Typography variant="h3">Ryan Cross</Typography>
-        <Socials></Socials>
+        <SocialsBar></SocialsBar>
         <Fab variant="extended" color="primary">
           <Box sx={{ mr: 1 }}>
             <FaDownload />
