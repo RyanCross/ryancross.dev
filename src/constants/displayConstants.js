@@ -16,3 +16,33 @@ export const socialsData = {
     github: "https://github.com/RyanCross",
   },
 };
+
+export const projects = {
+  syncopath: {
+    title: "Syncopath",
+    description: "A game built to test and train your rhythm. Made in Godot 4.",
+    linkText: "Play",
+    link: "",
+  },
+  ryancrossdev: {
+    title: "ryancross.dev",
+    description:
+      " Wait a minute.. it's this website! *Queue Inception noises*. It's also a project. Made with intent to express compentency in frontend development.",
+    linkText: "See Code",
+    link: "",
+  },
+  godotwfc: {
+    title: "GD2D Terrain Generator",
+    description:
+      "GD2D is a GoDot 2D terrain generation tool for creating randomly generated tilemaps. While still in development, it can currently generate simplistic terrain from any tileset.",
+    linkText: "See Code",
+    link: "",
+  },
+  jamgames: {
+    title: "Jam Games",
+    description:
+      "These are fun, often barely functional games I've made during limited timespan competitions! Usually in 72 hrs.",
+    linkText: "Play",
+    link: "",
+  },
+};

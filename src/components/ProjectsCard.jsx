@@ -5,22 +5,26 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import image from "../static/godotwfc.gif";
 
-export default function ImgMediaCard() {
+export default function ProjectsCard(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" alt="green iguana" height="180" src={image} />
+      <CardMedia
+        component="img"
+        alt={props.projImageAlt}
+        height="180"
+        src={props.projImage}
+      />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Godot WFC
+          {props.projTitle}
         </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          A terrain generator.
+          {props.projDesc}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="small">{props.projLink1}</Button>
       </CardActions>
     </Card>
   );
