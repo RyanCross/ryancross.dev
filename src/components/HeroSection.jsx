@@ -5,6 +5,7 @@ import { Box, Fab, Typography } from "@mui/material";
 import { FaDownload } from "react-icons/fa6";
 
 export function HeroSection() {
+  //TODO add a strikethrough on cross
   return (
     <div>
       <Box component="section">
