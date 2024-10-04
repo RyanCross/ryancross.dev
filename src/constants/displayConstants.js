@@ -1,3 +1,8 @@
+import syncopathImg from "../static/syncopathPromo1.gif";
+import devWebsiteImg from "../static/pigJigPromotional2.png";
+import godotwfcImg from "../static/godotwfc.gif";
+import jamsImg from "../static/pigJigPromotional1.png";
+
 export const iconSize = "30";
 
 export const socialsData = {
@@ -17,32 +22,36 @@ export const socialsData = {
   },
 };
 
-export const projects = {
-  syncopath: {
+export const projects = [
+  {
     title: "Syncopath",
     description: "A game built to test and train your rhythm. Made in Godot 4.",
     linkText: "Play",
     link: "",
+    img: syncopathImg,
   },
-  ryancrossdev: {
+  {
+    title: "Game Jams",
+    description:
+      "These are fun, sometimes barely functional games I've made during limited timespan competitions! Usually in 72 hrs.",
+    linkText: "Play",
+    link: "",
+    img: jamsImg,
+  },
+  {
     title: "ryancross.dev",
     description:
       " Wait a minute.. it's this website! *Queue Inception noises*. It's also a project. Made with intent to express compentency in frontend development.",
     linkText: "See Code",
     link: "",
+    img: devWebsiteImg,
   },
-  godotwfc: {
+  {
     title: "GD2D Terrain Generator",
     description:
       "GD2D is a GoDot 2D terrain generation tool for creating randomly generated tilemaps. While still in development, it can currently generate simplistic terrain from any tileset.",
-    linkText: "See Code",
+    linkText: "Learn More",
     link: "",
+    img: godotwfcImg,
   },
-  jamgames: {
-    title: "Jam Games",
-    description:
-      "These are fun, often barely functional games I've made during limited timespan competitions! Usually in 72 hrs.",
-    linkText: "Play",
-    link: "",
-  },
-};
+];

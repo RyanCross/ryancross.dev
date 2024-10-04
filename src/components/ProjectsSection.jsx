@@ -1,14 +1,28 @@
 import * as React from "react";
 import ProjectsCard from "./ProjectsCard";
-import godotwfcImg from "../static/godotwfc.gif";
-import pigJigImg from "../static/pigJigPromotional1.png";
-import syncopathImg from "../static/syncopathPromo1.gif";
+import { projects } from "../constants/displayConstants";
+import { Grid2, Container, Typography } from "@mui/material";
 
-import { Grid2, Container } from "@mui/material";
+export function ProjectsSection() {
+  function buildProjects() {
+    return projects.map((project) => {
+      return (
+        <ProjectsCard
+          projTitle={project.title}
+          projImage={project.img}
+          projImageAlt="alt"
+          projDesc={project.description}
+          projLink={project.link}
+          projLinkText={project.linkText}
+        ></ProjectsCard>
+      );
+    });
+  }
 
-function ProjectsSection() {
-  // TODO grid layout
-  <Container>
-    <ProjectsCard projTitle="Syncopath"> </ProjectsCard>
-  </Container>;
+  return (
+    <Container>
+      <Typography variant="h4">Projects</Typography>
+      {buildProjects()}
+    </Container>
+  );
 }
