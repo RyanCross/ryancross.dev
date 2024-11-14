@@ -3,6 +3,7 @@ import { CircleFrame } from "./CircleFrame";
 import { SocialsBar } from "./SocialsBar";
 import { Box, Fab, Typography } from "@mui/material";
 import { FaDownload } from "react-icons/fa6";
+import resume from '../static/RyanCross-Resume.pdf';
 
 export function HeroSection() {
   //TODO add a strikethrough on cross
@@ -14,7 +15,7 @@ export function HeroSection() {
           Ryan Cross
         </Typography>
         <SocialsBar></SocialsBar>
-        <Fab variant="extended" color="primary">
+        <Fab href={resume} download="RyanCrossResume.pdf" variant="extended" color="primary">
           <Box sx={{ mr: 1 }}>
             <FaDownload />
           </Box>

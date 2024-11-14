@@ -33,7 +33,7 @@ export const projects = [
   {
     title: "Game Jams",
     description:
-      "These are fun, sometimes barely functional games I've made during limited timespan competitions! Usually in 72 hrs.",
+      "These are fun, often dysfunctional games I've made during limited timespan competitions. Usually 72 hrs.",
     linkText: "Play",
     link: "",
     img: jamsImg,
@@ -41,7 +41,7 @@ export const projects = [
   {
     title: "ryancross.dev",
     description:
-      " Wait a minute.. it's this website! *Queue Inception noises*. It's also a project. Made with intent to express compentency in frontend development.",
+      "See the code for this site. *Inception Noises*",
     linkText: "See Code",
     link: "",
     img: devWebsiteImg,
