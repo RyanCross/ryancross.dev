@@ -27,9 +27,14 @@ export default function ProjectCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* <CardActions>
-        <Button size="small">{props.projLinkText}</Button>
-      </CardActions> */}
+      <CardActions>
+        <Button size="small" href={props.projLink} sx={{
+        '&:hover': {
+          backgroundColor: 'primary.main',
+          color: 'secondary.main',
+        },
+      }}>{props.projLinkText}</Button>
+      </CardActions>
     </Card>
   );
 }

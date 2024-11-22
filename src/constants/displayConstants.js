@@ -27,7 +27,7 @@ export const projects = [
     title: "Syncopath",
     description: "A game built to test and train your rhythm. Made in Godot 4.",
     linkText: "Play",
-    link: "",
+    link: "https://ryancross.itch.io/syncopath",
     img: syncopathImg,
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
     description:
       "These are fun, often dysfunctional games I've made during limited timespan competitions. Usually 72 hrs.",
     linkText: "Play",
-    link: "",
+    link: "https://ryancross.itch.io/",
     img: jamsImg,
   },
   {
@@ -43,15 +43,15 @@ export const projects = [
     description:
       "See the code for this site. *Inception Noises*",
     linkText: "See Code",
-    link: "",
+    link: "https://github.com/RyanCross/ryancross.dev",
     img: devWebsiteImg,
   },
   {
     title: "GD2D Terrain Generator",
     description:
-      "GD2D is a GoDot 2D terrain generation tool for creating randomly generated tilemaps. While still in development, it can currently generate simplistic terrain from any tileset.",
+      "GD2D is a GoDot 2D terrain generation tool for creating randomly generated tilemaps. It can currently generate simplistic terrain from any tileset.",
     linkText: "Learn More",
-    link: "",
+    link: "https://github.com/RyanCross/godot-wave-function-collapse",
     img: godotwfcImg,
   },
 ];
