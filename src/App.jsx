@@ -5,20 +5,18 @@ import { ProjectsSection } from "./components/ProjectsSection.jsx";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { theme } from "./constants/theme.js";
-import Divider from "@mui/material/Divider";
+import { Stack }  from "@mui/material"
 
 function App() {
   return (
     <>
       <CssBaseline>
         <ThemeProvider theme={theme}>
-          <div className="App">
+          <Stack className="App">
             <HeroSection></HeroSection>
-            <Divider variant="middle" flexItem="true" />
             <ProjectsSection></ProjectsSection>
-            <Divider variant="middle" flexItem="true" />
             <FooterSection></FooterSection>
-          </div>
+          </Stack>
         </ThemeProvider>
       </CssBaseline>
     </>
