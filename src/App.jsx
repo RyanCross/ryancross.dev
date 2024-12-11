@@ -1,4 +1,3 @@
-import "./App.css";
 import { HeroSection } from "./components/HeroSection.jsx";
 import { FooterSection } from "./components/FooterSection.jsx";
 import { ProjectsSection } from "./components/ProjectsSection.jsx";
@@ -12,7 +11,8 @@ function App() {
     <>
       <CssBaseline>
         <ThemeProvider theme={theme}>
-          <Stack className="App">
+          {/* App */}
+          <Stack> 
             <HeroSection></HeroSection>
             <ProjectsSection></ProjectsSection>
             <FooterSection></FooterSection>

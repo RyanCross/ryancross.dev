@@ -5,7 +5,7 @@ import { theme } from "../constants/theme";
 
 export function CircleFrame() {
   return (
-    <Box sx={{ minHeight: 400 }}>
+    <Box sx={{ margin: 2 }}>
       <Avatar
         alt="Ryan Cross, hello friend!"
         src={heroPic}

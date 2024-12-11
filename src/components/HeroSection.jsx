@@ -26,9 +26,14 @@ export function HeroSection() {
           </Fab>
         </Box>
 
+        <Box sx={{mt: 2}} display="flex" alignItems="center" justifyContent={"center"}>
+          <Typography variant="subtitle1">Business Inquiries</Typography>
+        </Box>
+        <Box display="flex" alignItems="center" justifyContent={"center"}>
+          <Typography variant="h5">ryan@cinuous.com</Typography>
+        </Box>
 
-        <Typography variant="subtitle1">Business Inquiries</Typography>
-        <Typography variant="h5">ryan@cinuous.com</Typography>
+
       </Box>
     </div>
   );
