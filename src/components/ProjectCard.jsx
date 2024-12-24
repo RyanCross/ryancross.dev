@@ -19,7 +19,7 @@ export default function ProjectCard(props) {
           src={props.projImage}
         />
         {/* height enforces a consistent card size, if it looks wonky, description is too long */}
-        <CardContent sx={{height: 175}}> 
+        <CardContent sx={{height: 125}}> 
           <Typography gutterBottom variant="h5" component="div">
             {props.projTitle}
           </Typography>
@@ -32,7 +32,7 @@ export default function ProjectCard(props) {
         <Button size="small" href={props.projLink} sx={{
         '&:hover': {
           backgroundColor: 'primary.main',
-          color: 'secondary.main',
+          color: 'common.white',
         },
       }}>{props.projLinkText}</Button>
       </CardActions>

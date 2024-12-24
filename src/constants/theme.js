@@ -32,7 +32,7 @@ const themeOptions = {
       fontFamily: "Cinzel",
     },
     button: {
-      fontFamily: "Archivo",
+      fontFamily: "Raleway",
     },
   },
   props: {

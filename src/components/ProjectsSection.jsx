@@ -22,8 +22,8 @@ export function ProjectsSection() {
   }
 
   return (
-    <Container sx={{mt: 5}} component="section" display="flex" justifyContent="center">
-      <Typography sx={{mb: 2}} variant="h4" textAlign="center">Projects</Typography>
+    <Container sx={{}} component="section" display="flex" justifyContent="center">
+      <Typography sx={{mb: 2, textDecoration: "underline"}} variant="h4" textAlign="center" >Projects</Typography>
       <Grid2 container gap={2} justifyContent="center">
         {buildProjects()}
       </Grid2>

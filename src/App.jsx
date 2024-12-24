@@ -1,5 +1,5 @@
 import { HeroSection } from "./components/HeroSection.jsx";
-import { FooterSection } from "./components/FooterSection.jsx";
+import { Footer } from "./components/Footer.jsx";
 import { ProjectsSection } from "./components/ProjectsSection.jsx";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
@@ -15,7 +15,7 @@ function App() {
           <Stack> 
             <HeroSection></HeroSection>
             <ProjectsSection></ProjectsSection>
-            <FooterSection></FooterSection>
+            <Footer></Footer>
           </Stack>
         </ThemeProvider>
       </CssBaseline>

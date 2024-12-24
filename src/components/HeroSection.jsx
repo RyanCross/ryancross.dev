@@ -6,17 +6,17 @@ import { FaDownload } from "react-icons/fa6";
 import resume from '../static/RyanCross-Resume.pdf';
 
 export function HeroSection() {
-  //TODO add a strikethrough on cross
+  const name = `Ryan Cr${String.fromCodePoint(0x00f8)}ss`
   return (
     <div>
       <Box component="section">
         <CircleFrame></CircleFrame>
         <Box>
           <Typography color="textPrimary" variant="h3" align="center">
-            Ryan Cross
+            {name}
           </Typography>
         </Box>
-        <SocialsBar></SocialsBar>
+        <SocialsBar ></SocialsBar>
         <Box display="flex" alignItems="center" justifyContent={"center"}>
           <Fab href={resume} download="RyanCrossResume.pdf" variant="extended" color="primary" margin="auto">
             <Box sx={{ mr: 1 }}>
@@ -26,12 +26,16 @@ export function HeroSection() {
           </Fab>
         </Box>
 
-        <Box sx={{mt: 2}} display="flex" alignItems="center" justifyContent={"center"}>
-          <Typography variant="subtitle1">Business Inquiries</Typography>
+        {/* Business Inquires Subsection */}
+        <Box sx={{m: 5}}> 
+          <Box sx={{ mt: 2 }} display="flex" alignItems="center" justifyContent={"center"}>
+            <Typography variant="subtitle1">Business Inquiries</Typography>
+          </Box>
+          <Box display="flex" alignItems="center" justifyContent={"center"}>
+            <Typography variant="h5">ryan@cinuous.com</Typography>
+          </Box>
         </Box>
-        <Box display="flex" alignItems="center" justifyContent={"center"}>
-          <Typography variant="h5">ryan@cinuous.com</Typography>
-        </Box>
+
 
 
       </Box>
