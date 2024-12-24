@@ -7,22 +7,26 @@ export function ProjectsSection() {
   function buildProjects() {
     return projects.map((project) => {
       return (
-        <ProjectCard
-          projTitle={project.title}
-          projImage={project.img}
-          projImageAlt="alt"
-          projDesc={project.description}
-          projLink={project.link}
-          projLinkText={project.linkText}
-        ></ProjectCard>
+        <Grid2 size={{xs: 12, sm: 4}}>
+          <ProjectCard 
+            projTitle={project.title}
+            projImage={project.img}
+            projImageAlt="alt"
+            projDesc={project.description}
+            projLink={project.link}
+            projLinkText={project.linkText}
+          ></ProjectCard>
+        </Grid2>
       );
     });
   }
 
   return (
-    <Container>
-      <Typography variant="h4">Projects</Typography>
-      {buildProjects()}
+    <Container sx={{mt: 5}} component="section" display="flex" justifyContent="center">
+      <Typography sx={{mb: 2}} variant="h4" textAlign="center">Projects</Typography>
+      <Grid2 container gap={2} justifyContent="center">
+        {buildProjects()}
+      </Grid2>
     </Container>
   );
 }

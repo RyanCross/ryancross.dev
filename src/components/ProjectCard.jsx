@@ -10,7 +10,7 @@ import CardActionArea from "@mui/material/CardActionArea";
 // everything in card action area a single event
 export default function ProjectCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -18,7 +18,8 @@ export default function ProjectCard(props) {
           height="180"
           src={props.projImage}
         />
-        <CardContent>
+        {/* height enforces a consistent card size, if it looks wonky, description is too long */}
+        <CardContent sx={{height: 175}}> 
           <Typography gutterBottom variant="h5" component="div">
             {props.projTitle}
           </Typography>
