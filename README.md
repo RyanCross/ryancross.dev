@@ -1,5 +1,11 @@
-# Getting Started with Create React App
+## Deployment 
+Deployment is done via github pages manually via the `npm run deploy` command. Which pushes the content of the `build` and `public` dirs to the `gh-pages` branch.
 
+## DNS
+The CNAME file in the public dir creates a record mapping for the github pages user domain to a custom domain.
+
+
+## Create React App Content
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
