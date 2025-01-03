@@ -2,6 +2,7 @@ import syncopathImg from "../static/syncopathPromo1.gif";
 import devWebsiteImg from "../static/pigJigPromotional2.png";
 import godotwfcImg from "../static/godotwfc.gif";
 import jamsImg from "../static/pigJigPromotional1.png";
+import reactMaterialImg from "../static/reactMaterialGradient.png";
 
 export const iconSize = "30";
 
@@ -44,12 +45,12 @@ export const projects = [
       "See the code for this site. *Inception Noises*",
     linkText: "See Code",
     link: "https://github.com/RyanCross/ryancross.dev",
-    img: devWebsiteImg,
+    img: reactMaterialImg,
   },
   {
     title: "GD2D Terrain Generator",
     description:
-      "GD2D is a GoDot 2D terrain generation tool for creating randomly generated tilemaps. It can currently generate simplistic terrain from any tileset.",
+      "A tool for creating randomly generated tilemaps. Generate simplistic terrain from any tileset.",
     linkText: "Learn More",
     link: "https://github.com/RyanCross/godot-wave-function-collapse",
     img: godotwfcImg,

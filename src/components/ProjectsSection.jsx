@@ -7,7 +7,7 @@ export function ProjectsSection() {
   function buildProjects() {
     return projects.map((project) => {
       return (
-        <Grid2 size={{xs: 12, sm: 4}}>
+        <Grid2 size={{xs: 10, md: 4}}>
           <ProjectCard 
             projTitle={project.title}
             projImage={project.img}
